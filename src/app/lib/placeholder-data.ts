@@ -21,3 +21,28 @@ export const homeHeroSocial = [
     label: 'Twitter',
   },
 ];
+
+export const aboutContent = {
+  title: 'About me',
+  desc: 'Here you will find more information about me, what I do, and my current skills mostly in terms \nof programming and technology',
+  getToKnowTitle: 'Get to know me!',
+  getToKnowDesc:
+    "I am a dedicated full stack web developer passionate about crafting elegant and functional digital solutions. With a background in both frontend and backend development, I thrive on transforming ideas into engaging user experiences. My journey in web development is driven by a commitment to continuous learning and a desire to create meaningful contributions to the digital landscape. Let's connect and explore how we can bring your vision to life.",
+  skillTitle: 'My Skills',
+  skills: [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'NextJs',
+    'NodeJs',
+    'NestJs',
+    'SQL',
+    'NoSQL',
+    'Docker',
+    'GIT',
+    'Github',
+    'Terminal',
+  ],
+};

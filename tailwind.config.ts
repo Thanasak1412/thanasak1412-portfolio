@@ -22,6 +22,7 @@ const config: Config = {
         xl: '5rem',
         '2xl': '6rem',
       },
+      screens: ['1440px'],
     },
     keyframes: {
       wheel: {
