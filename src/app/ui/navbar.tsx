@@ -1,8 +1,9 @@
 'use client';
 import { Bars3Icon, XMarkIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
-import { cn } from '@/app/lib/utils';
-
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
+
+import { cn } from '@/app/lib/utils';
+import Image from '@/app/ui/image';
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -13,7 +14,7 @@ const navigation = [
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="w-full px-12 bg-gray-800">
+    <Disclosure as="nav" className="sticky top-0 w-full px-12 bg-gray-800">
       {({ open }) => (
         <>
           <div className="mx-auto">
@@ -55,20 +56,12 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <span
-                  className={cn(
-                    'leading-[1] block overflow-hidden max-w-11 max-h-11 rounded-full',
-                    'cursor-pointer hover:border-blue-500 hover:border hover:mix-blend-lighten'
-                  )}
-                >
-                  <span className="w-full h-full bg-cover">
-                    <img
-                      src="/profile.jpg"
-                      alt="My Profile"
-                      className="object-cover object-[0px_-5px] w-full h-full"
-                    />
-                  </span>
-                </span>
+                <Image
+                  src="/profile.jpg"
+                  alt="My Profile"
+                  imgContainer="max-w-11 max-h-11"
+                  className="object-[0px_-5px] cursor-pointer hover:border-blue-500 hover:border hover:mix-blend-lighten"
+                />
               </div>
             </div>
           </div>

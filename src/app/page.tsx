@@ -8,12 +8,10 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center min-h-screen">
       <Navbar />
-      <div className="container">
-        <HomeHero />
-        <About />
-        <Project />
-        <Contact />
-      </div>
+      <HomeHero />
+      <About />
+      <Project />
+      <Contact />
     </main>
   );
 }

@@ -23,6 +23,14 @@ const config: Config = {
         '2xl': '6rem',
       },
     },
+    keyframes: {
+      wheel: {
+        '100%': { opacity: '0', top: '27px' },
+      },
+    },
+    animation: {
+      wheel: 'wheel 1.3s infinite',
+    },
   },
   plugins: [],
 };
