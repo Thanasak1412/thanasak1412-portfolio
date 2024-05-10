@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <link rel="icon" href="/favicon.ico" sizes="any" />
+      <link rel="icon" href="/icon?<generated>" type="image/png" sizes="32x32" />
       <body className={inter.className}>{children}</body>
     </html>
   );
