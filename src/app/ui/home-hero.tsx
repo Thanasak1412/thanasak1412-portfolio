@@ -2,7 +2,7 @@ import Image from '@/app/ui/image';
 import Link from 'next/link';
 import { ButtonLink } from '@/app/ui/button';
 import { cn } from '../lib/utils';
-import { homeHeroContent, homeHeroSocial } from '@/app/lib/placeholder-data';
+import { homeHeroContent, socials } from '@/app/lib/placeholder-data';
 
 export default function HomeHero() {
   return (
@@ -41,7 +41,7 @@ export default function HomeHero() {
 
       {/* HOME HERO SOCIAL SECTION */}
       <div className="absolute left-0 flex flex-col -translate-y-1/2 top-1/2 bg-white shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]">
-        {homeHeroSocial.map((social) => (
+        {socials.map((social) => (
           <Link
             key={social.label}
             href={social.url}

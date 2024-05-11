@@ -1,4 +1,5 @@
 import Navbar from './ui/navbar';
+import Footer from './ui/footer';
 import HomeHero from './ui/home-hero';
 import About from './ui/about';
 import Project from './ui/project';
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Project />
       <Contact />
+      <Footer />
     </main>
   );
 }

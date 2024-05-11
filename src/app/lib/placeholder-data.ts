@@ -4,7 +4,7 @@ export const homeHeroContent = {
   desc: "I am a passionate full stack web developer with a knack for creating dynamic and intuitive web and applications. My journey in the world of programming began with a curiosity to understand how the digital realm works and a desire to craft solutions that make a difference. \n\n As a full stack developer, I thrive on both the frontend and backend aspects of web development. Whether it's building responsive websites, developing scalable web applications, or optimizing performance for enhanced user experience, I am always eager to push the boundaries of what's possible in the digital realm.",
 };
 
-export const homeHeroSocial = [
+export const socials = [
   {
     icon: '/icons/linkedin.svg',
     url: 'https://th.linkedin.com/in/thanasak-s-676224232/en?trk=people-guest_people_search-card',
@@ -92,4 +92,28 @@ export const contactContent = {
   messageLabel: 'Message',
   messagePlaceholder: 'Enter Your Message',
   submitButton: 'submit',
+};
+
+export const footerContent = {
+  socialTitle: 'social',
+  socials: [
+    {
+      icon: '/icons/linkedin-ico.png',
+      url: 'https://th.linkedin.com/in/thanasak-s-676224232/en?trk=people-guest_people_search-card',
+      label: 'Linkedin',
+    },
+    {
+      icon: '/icons/github-ico.png',
+      url: 'https://github.com/Thanasak1412',
+      label: 'Github',
+    },
+    {
+      icon: '/icons/twitter-ico.png',
+      url: 'https://twitter.com/Thanasak1412',
+      label: 'Twitter',
+    },
+  ],
+  name: 'Thanasak Srisaeng',
+  desc: aboutContent.desc,
+  copyright: '© Copyright {date}. Made by',
 };
