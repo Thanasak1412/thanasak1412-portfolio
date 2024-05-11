@@ -1,6 +1,6 @@
 import Image from '@/app/ui/image';
-import { ButtonLink } from '@/app/ui/button';
 import Link from 'next/link';
+import { ButtonLink } from '@/app/ui/button';
 import { cn } from '../lib/utils';
 import { homeHeroContent, homeHeroSocial } from '@/app/lib/placeholder-data';
 
@@ -12,7 +12,7 @@ export default function HomeHero() {
         'container bg-center bg-cover bg-repeat text-gray-700 relative',
         'flex flex-col items-center justify-center h-screen min-h-[64rem] sm:min-h-[unset] gap-y-8 bg-slate-300'
       )}
-      style={{ background: "url('/bg-home-hero.webp')" }}
+      style={{ background: "url('/bg-common.webp')" }}
     >
       <div className="absolute flex flex-col items-center justify-center -translate-y-1/2 top-1/2 gap-y-8">
         <div className="text-center text-gray-900">
@@ -52,7 +52,7 @@ export default function HomeHero() {
             <Image
               src={social.icon}
               alt={social.label}
-              imgContainer="max-w-12 max-h-12"
+              imgContainer="max-w-12 max-h-12 rounded-full"
               className="p-2"
             />
           </Link>

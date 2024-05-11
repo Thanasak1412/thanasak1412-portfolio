@@ -34,7 +34,7 @@ export default function Navbar() {
               <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
                 <div className="flex items-center flex-shrink-0">
                   <RocketLaunchIcon className="text-blue-300 w-7 h-7" />
-                  <h6 className="ml-4 overflow-hidden text-sm font-semibold text-ellipsis whitespace-nowrap">
+                  <h6 className="mx-4 overflow-hidden text-sm font-semibold text-ellipsis whitespace-nowrap">
                     Thanasak Srisaeng
                   </h6>
                 </div>
@@ -59,7 +59,7 @@ export default function Navbar() {
                 <Image
                   src="/profile.jpg"
                   alt="My Profile"
-                  imgContainer="max-w-11 max-h-11"
+                  imgContainer="max-w-11 max-h-11 rounded-full"
                   className="object-[0px_-5px] cursor-pointer hover:border-blue-500 hover:border hover:mix-blend-lighten"
                 />
               </div>

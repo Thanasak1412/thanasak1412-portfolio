@@ -18,7 +18,7 @@ export default function About() {
           </h2>
           <p className="text-sm whitespace-pre-line lg:text-xl">{aboutContent.desc}</p>
         </div>
-        <div className="flex flex-col justify-between gap-8 my-10 lg:flex-row">
+        <div className="flex flex-col justify-between my-10 gap-8 lg:flex-row">
           {/* GET TO KNOW ME */}
           <div className="flex flex-col flex-1 gap-y-4 lg:gap-y-8">
             <h3 className="text-lg font-bold text-black lg:text-3xl">
