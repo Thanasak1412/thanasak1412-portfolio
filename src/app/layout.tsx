@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
+import Navbar from '@/app/ui/navbar';
+import Footer from '@/app/ui/footer';
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -25,7 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <link rel="icon" href="/icon?<generated>" type="image/png" sizes="32x32" />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

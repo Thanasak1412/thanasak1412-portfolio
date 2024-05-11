@@ -7,7 +7,7 @@ import { ButtonLink } from './button';
 
 export default function Project() {
   return (
-    <section id="project" className="container w-full h-full bg-white">
+    <section id="projects" className="container w-full h-full bg-white">
       <div
         className={cn(
           'min-h-screen py-24',
