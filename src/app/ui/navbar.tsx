@@ -1,4 +1,6 @@
 'use client';
+
+import Link from 'next/link';
 import { Bars3Icon, XMarkIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 
@@ -8,7 +10,7 @@ import Image from '@/app/ui/image';
 const navigation = [
   { name: 'Home', href: '#' },
   { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#project' },
+  { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -32,12 +34,17 @@ export default function Navbar() {
                 </DisclosureButton>
               </div>
               <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
-                <div className="flex items-center flex-shrink-0">
-                  <RocketLaunchIcon className="text-blue-300 w-7 h-7" />
-                  <h6 className="mx-4 overflow-hidden text-sm font-semibold text-ellipsis whitespace-nowrap">
-                    Thanasak Srisaeng
-                  </h6>
-                </div>
+                {/* LOGO SECTION */}
+                <Link href="/" passHref>
+                  <div className="flex items-center flex-shrink-0">
+                    <RocketLaunchIcon className="text-blue-300 w-7 h-7" />
+                    <h6 className="mx-4 overflow-hidden text-sm font-semibold text-ellipsis whitespace-nowrap">
+                      Thanasak Srisaeng
+                    </h6>
+                  </div>
+                </Link>
+
+                {/* NAVBAR ITEMS ON DESKTOP SECTION */}
                 <div className="hidden sm:ml-12 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
@@ -55,6 +62,8 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
+
+              {/* PROFILE IMAGE SECTION */}
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <Image
                   src="/profile.jpg"
@@ -66,6 +75,7 @@ export default function Navbar() {
             </div>
           </div>
 
+          {/* NAVBAR ITEM ON MOBILE SECTION */}
           <DisclosurePanel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
