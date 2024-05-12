@@ -8,8 +8,8 @@ export async function POST(req: NextRequest) {
 
   // Process a send email request
   const mailOptions: Mail.Options = {
-    from: CONTACT_EMAIL,
-    to: formData.get('email')?.toString(),
+    from: formData.get('email')?.toString(),
+    to: CONTACT_EMAIL,
     subject: `Contact email from ${formData.get('name')?.toString()} ${formData.get('email')?.toString()}`,
     text: formData.get('message')?.toString(),
   };
