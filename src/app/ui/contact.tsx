@@ -2,7 +2,7 @@
 
 import { useFormState, useFormStatus } from 'react-dom';
 import { Button } from '@headlessui/react';
-import { useEffect, useRef, useState, type LegacyRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { cn } from '@/app/lib/utils';
 import { sendEmail } from '@/app/lib/actions';

@@ -4,14 +4,10 @@ import { ButtonLink } from '../button';
 import type { Project } from '@/app/lib/definitions';
 
 type Props = {
-  project?: Project;
+  project: Project;
 };
 
 export default function ProjectHero({ project }: Readonly<Props>) {
-  if (!project) {
-    return null;
-  }
-
   return (
     <section
       id="project-hero"

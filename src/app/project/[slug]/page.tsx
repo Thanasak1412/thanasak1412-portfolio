@@ -14,8 +14,12 @@ export default function Project({ params }: Readonly<Props>) {
 
   return (
     <main className="w-full h-full">
-      <ProjectHero project={project} />
-      <ProjectDetail project={project} />
+      {project && (
+        <>
+          <ProjectHero project={project} />
+          <ProjectDetail project={project} />
+        </>
+      )}
     </main>
   );
 }
