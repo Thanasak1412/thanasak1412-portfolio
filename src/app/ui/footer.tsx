@@ -7,15 +7,15 @@ import { cn } from '../lib/utils';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white">
+    <footer className="w-full text-white bg-black">
       <div
         className={cn(
-          'container flex flex-col gap-y-6 py-14',
+          'container flex flex-col gap-y-6 py-14 lg:max-w-5xl',
           'lg:flex-row-reverse lg:justify-between lg:flex-wrap lg:gap-x-8'
         )}
       >
         <div className="flex flex-col gap-y-3 lg:flex-1 lg:items-end">
-          <h2 className="text-lg lg:text-3xl font-bold">{footerContent.socialTitle}</h2>
+          <h2 className="text-lg font-bold lg:text-3xl">{footerContent.socialTitle}</h2>
           <ul className="flex gap-x-3">
             {footerContent.socials.map((social) => (
               <li key={social.label}>
@@ -33,13 +33,13 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col gap-y-3 lg:flex-1">
-          <h1 className="text-xl lg:text-4xl font-bold">{footerContent.name}</h1>
+          <h1 className="text-xl font-bold lg:text-4xl">{footerContent.name}</h1>
           <p className="text-sm lg:text-lg">{footerContent.desc}</p>
         </div>
 
         <hr className="w-full h-[1px] border-slate-500" />
 
-        <div className="text-center lg:mx-auto space-x-1">
+        <div className="space-x-1 text-center lg:mx-auto">
           <span className="text-xs leading-6 tracking-normal">
             {footerContent.copyright.replace('{date}', new Date().getFullYear().toString())}
           </span>

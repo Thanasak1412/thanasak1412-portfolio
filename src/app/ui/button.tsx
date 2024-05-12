@@ -1,12 +1,13 @@
 import { cn } from '@/app/lib/utils';
+import type { AnchorHTMLAttributes } from 'react';
 
-type Props = {
+interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
   title: string;
   link: string;
   className?: string;
-};
+}
 
-export function ButtonLink({ title, link, className }: Readonly<Props>) {
+export function ButtonLink({ title, link, className, ...other }: Readonly<Props>) {
   return (
     <a
       className={cn(
@@ -16,6 +17,7 @@ export function ButtonLink({ title, link, className }: Readonly<Props>) {
         className
       )}
       href={link}
+      {...other}
     >
       {title}
     </a>

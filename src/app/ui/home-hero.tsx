@@ -20,7 +20,7 @@ export default function HomeHero() {
           <h2 className="text-3xl font-semibold">{homeHeroContent.subtitle}</h2>
         </div>
         <div className="max-w-[90%] lg:max-w-3xl">
-          <p className="w-full text-lg leading-8 text-center whitespace-pre-line">
+          <p className="w-full text-lg text-center whitespace-pre-line leading-8">
             {homeHeroContent.desc}
           </p>
         </div>
